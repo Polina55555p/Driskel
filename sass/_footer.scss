@@ -1,0 +1,39 @@
+.footer {
+	background: $black;
+	.liner {
+		border-right: 1px solid $dark-orange; 
+		}
+
+	.nav-link {
+		color: $white;
+		position: relative;
+		transition: all .5s ease;
+		font-size: 1.25rem;
+		padding: 0;
+		&:hover {
+			color: $orange;
+		}
+	}
+	img {
+		max-width: 266px;
+	}
+	ul {
+		li {
+			padding-bottom: 2rem;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.first {
+		padding: 8.75rem 0 7.5rem 0;
+	}
+
+	.time-work {
+		color: $grey;
+		font-size: 1rem;
+	}
+
+}
+

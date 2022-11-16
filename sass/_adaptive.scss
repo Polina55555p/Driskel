@@ -1,0 +1,148 @@
+@media(max-width: 1199px) {
+	header {
+		.dropdown-menu {
+			.tab-pane {
+		    padding: 1.5rem 0.75rem 0;
+			}
+			.nav-pills {
+		    padding-left: 0.75rem;
+			}
+			#pills-profile {
+			 min-width: 60.625rem;
+			}
+		}
+		.navbar-expand-md .navbar-nav .nav-link {
+	    padding-right: 0.125rem;
+	    padding-left: 0.125rem;
+		}
+	}
+	h1 {
+		font-size: 3.75rem;
+	}
+	.products {
+		.card {
+			.my-btn {
+				display: inline-block;
+			}
+			&:hover {
+				position: relative;
+				z-index: 10;
+				box-shadow: none;
+			}
+		}
+	}
+	.ad {
+		.lip-nitn {
+		h4 {
+			padding-bottom: 8.75rem;
+			}
+		}
+	}
+
+}
+
+@media(max-width: 991px) {
+	header {
+		.search {
+			form {
+			  width: 17.125rem;
+			}
+		}	
+	}
+	.main {
+	background: url('../img/main/bg-md.jpg') no-repeat center center;
+	background-size: cover;
+	}
+	.footer {
+		.first {
+			padding: 2.75rem 0 1.5rem 0;
+		}
+	}
+
+	h4 {
+		font-size: 1.875rem;
+	}
+
+	h2 {
+		font-size: 3.125rem;
+	}
+
+	section {
+		margin-bottom: 3rem;
+
+	}
+	.shop {
+		.shop-image {
+			padding-top: 25rem;
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.shop {
+		.shop-image {
+			padding-top: 16.75rem;
+		}
+	}
+}
+
+@media(max-width: 575px) {
+	.main {
+	background: none;
+	background-size: cover;
+	padding: 0;
+	background-color: $black;
+		.container {
+			padding: 0;
+		}
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.125rem;
+	}
+	.brand {
+		img {
+			width: 5.125rem;
+			height: auto;
+		}
+	}
+
+
+	.catalog {
+		.md-catalog-img {
+			img {
+				width: 16.25rem;
+			}
+			
+		}
+	}
+	.modal-dialog {
+    max-width: 430px;
+	}
+
+	.review {
+	
+		.review-item {
+			p {
+				padding: 1.125rem 1.125rem 0.5rem;
+			}
+			.review-contacts {
+			    padding: 0 0 1.125rem 1.125rem;
+			}
+		}
+	}
+
+}
+
+
+@media(max-width: 415px) {
+	.callback {
+		form {
+    	#callback-email, #callback-name {
+    		width: 17.5rem;
+    		}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.shop {
+	h2 {
+		font-size: 3.125rem;
+		color: $orange;
+	}
+	.my-btn {
+		padding: 1.25rem 5.25rem;
+	}
+	.shop-image {
+		background: url("../img/shop/people.jpg") no-repeat center center;
+		background-size: cover;
+		padding-top: 40rem;
+	}
+}

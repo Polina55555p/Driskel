@@ -1,0 +1,61 @@
+.callback {
+	h3 {
+	color: $black;
+	font-weight: 500;
+    max-width: 32.5rem;
+	}
+
+	.my-btn {
+
+            &:hover {
+            	color: $orange;
+            &::after {
+                border-right-color: $white;
+            }
+            span {
+                &::after {
+                    border-left-color: $white;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .up {
+    	background: url('../img/callback/bg.jpg') no-repeat left center;
+    }
+
+    form {
+    	#callback-email, #callback-name {
+    		border: none;
+    		padding: 1.5rem 0 1.5rem 1.75rem;
+    		width: 24.5rem;
+    	}
+    	.form-check {
+    		padding-left: 1.5rem;
+    		label {
+    			font-size: 0.75rem;
+    		}
+    	}
+    }
+
+    #myBtn {
+    	margin-top: 65%;
+        margin-bottom: 30%;
+    	padding: 2rem 1.5rem;
+    	background: $white;
+    	border: 1px solid $orange;
+    	span {
+    		&::after {
+    		color: $orange;
+    		content: "\25B2";
+    		border: 1px solid $orange;
+    		padding: 0.75rem 1rem;
+    		position: relative;
+    		margin-left: 1rem;
+    		}
+    		
+		   
+    	}
+    }
+}

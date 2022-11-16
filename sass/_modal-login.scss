@@ -1,0 +1,59 @@
+#modal-login {
+    .modal-content {
+        background: $lite;
+    }
+    .modal-header {
+    border-bottom: none;
+    }
+    .btn-close {
+    color: none;
+    background: url("../img/modal-login/close.svg") no-repeat center center;
+    opacity: 1;
+    }
+    .modal-body {
+    padding: 0 2.75rem 2.5rem;
+    }
+    .my-btn {
+            &:hover {
+            &::after {
+                border-right-color: $white;
+            }
+            span {
+                &::after {
+                    border-left-color: $white;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+    .inter-phone {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        label {
+            color: $grey;
+        }
+        #phone-login {
+            border: none;
+            padding: 1.5rem 0 1.5rem 2rem;
+        }
+    }
+    .form-check {
+        padding-left: 3.25rem;
+        padding-right: 1.25rem;
+        .form-check-input[type=checkbox] {
+            border-radius: 0;
+        }
+        .form-check-input {
+            border: 1px solid $orange;
+            margin-top: 0.5em;
+        }
+        .form-check-input:checked {
+            background-color: $orange;
+            border-color: $orange;
+        }
+        label {
+            font-size: 0.775rem;
+            color: $grey;
+        }
+    }
+}

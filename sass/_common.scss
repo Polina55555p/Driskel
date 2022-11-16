@@ -1,0 +1,231 @@
+$lite: #FAF6F2;
+$black: #050402;
+$orange: #BB8C5F;
+$dark-orange: #524336;
+$white: #FAF6F2;
+$grey: #636B78;
+$bg: #EEEEEE;
+$bg-card: #F5F5F5;
+/* font-family: 'Forum', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+body {
+	font-family: 'Jost', sans-serif;
+	font-weight: 400;
+	font-size: 1.0625rem;
+	background: $bg;
+}
+a {
+	text-decoration: none;
+	color: $lite;
+	transition: all .6s ease;
+	&:hover {
+		color: $orange;
+	}
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+li, ul {
+	list-style: none;
+}
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+}
+
+input {
+	box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+.badge {
+	background: $orange;
+	padding: 0.1875rem 0.3125rem;
+	border-radius: 0;
+}
+
+.divider {
+	color: $orange;
+	z-index: 10;
+	&::after {
+		position: absolute;
+		content: "";
+		left: 2px; 
+	    bottom: -4px;
+	    border: 0.3125rem solid transparent; 
+	    border-left: 0.9rem solid $orange;
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		right: 2px; 
+	    bottom: -4px;
+	    border: 0.3125rem solid transparent; 
+	    border-right: 0.9rem solid $orange;
+	}
+}
+
+hr {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Forum', cursive;
+	font-size: 4.6875rem;
+	color: $orange; 
+	line-height: 100%;
+}
+
+h2 {
+	font-size: 3.75rem;
+	font-family: 'Forum', cursive;
+	color: $black;
+}
+
+h3 {
+	font-family: 'Jost' sans-serif;
+	font-size: 1.5625rem;
+	font-weight: 400;
+	color: $white;
+}
+
+h4 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: $white;
+}
+
+h5 {
+	font-size: 1.875rem;
+	font-weight: 700;
+	color: $black;
+}
+
+section {
+	margin-bottom: 7.5rem;
+}
+
+.my-btn {
+	padding: 1.25rem 4rem;
+	border: 2px solid $orange;
+	position: relative;
+	color: $lite;
+	background: $dark-orange;
+	transition: all .7s linear;
+	text-align: center;
+	cursor: pointer;
+	&::before, &::after {
+		content: ''; 
+	   position: absolute;
+	   left: -26px; 
+	    top: 30%;
+	    border: 10px solid transparent;
+	    border-right: 16px solid transparent;
+	}
+	&::before {
+		border-right-color: $orange;
+		transition: all 1.7s linear;
+	}
+   		
+	&::after {
+		border-right-color: $dark-orange;
+	   margin-left: 4px;
+	   transition: all .7s linear;
+	}
+	span {
+		&::before, &::after {
+		content: ''; 
+	    position: absolute;
+	    right: -26px; 
+	    top: 30%;
+	    border: 10px solid transparent;
+	    border-left: 16px solid transparent;
+		}
+		&::before {
+			border-left-color: $orange;
+			transition: all 1.7s linear;
+		}
+		&::after {
+			border-left-color: $dark-orange;
+		    margin-right: 4px;
+		    transition: all .7s linear;
+		}
+
+	}
+	&:hover {
+		background: transparent;
+
+		&::before {
+		border-right-color: $orange;
+		}
+   		
+		&::after {
+			border-right-color: $black;
+		   margin-left: 4px;
+		}
+		span {
+			&::before {
+			border-left-color: $orange;
+			}
+			&::after {
+				border-left-color: $black;
+			    margin-right: 4px;
+			}
+		}
+	}
+}
+
+.btn-border {
+	padding: 0.5rem 1.625rem;
+	background: transparent;
+	color: $orange;
+	&::after {
+		border-right-color: $bg-card;
+	}
+	span {
+		&::after {
+			border-left-color: $bg-card;
+		}
+	}
+	&:hover {
+		&::before {
+		border-right-color: $orange;
+		}
+   		
+		&::after {
+			border-right-color: $bg-card;
+		}
+		span {
+			&::after {
+				border-left-color: $bg-card;
+			}
+		}
+	}
+}
+
+
+.form-check {
+        padding-left: 3.25rem;
+        padding-right: 1.25rem;
+        .form-check-input[type=checkbox] {
+            border-radius: 0;
+        }
+        .form-check-input {
+            border: 1px solid $orange;
+            margin-top: 0.5em;
+        }
+        .form-check-input:checked {
+            background-color: $orange;
+            border-color: $orange;
+        }
+        label {
+            font-size: 0.775rem;
+            color: $grey;
+        }
+    }
